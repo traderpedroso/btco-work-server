@@ -618,7 +618,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "nano-work-server"
+name = "btco-work-server"
 version = "0.3.1"
 dependencies = [
  "blake2",
