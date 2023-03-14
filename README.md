@@ -1,6 +1,6 @@
 # btco work server
 
-![Build](https://github.com/btcocurrency/btco-work-server/workflows/Build/badge.svg)
+![Build](https://github.com/bitcoinnanolabs/btco-work-server/workflows/Build/badge.svg)
 
 This project is a dedicated work server for [the btco cryptocurrency](https://btco.org/). See the [documentation](https://docs.btco.org/integration-guides/work-generation/) for details on work generation and the current network difficulty.
 
@@ -13,7 +13,7 @@ If using more than one work peer, give the flag `--shuffle`. This makes it so th
 
 ## Current base difficulty
 
-`0xfffffff800000000` since [a75d984](https://github.com/btcocurrency/btco-work-server/commit/a75d98429a11fcb0c129a55380996a612299917b). See the [btco work generation guide](https://docs.btco.org/integration-guides/work-generation/#difficulty-thresholds) for more information.
+`0xfffffff800000000` since [a75d984](https://github.com/bitcoinnanolabs/btco-work-server/commit/a75d98429a11fcb0c129a55380996a612299917b). See the [btco work generation guide](https://docs.btco.org/integration-guides/work-generation/#difficulty-thresholds) for more information.
 
 ## Installation
 
@@ -62,7 +62,7 @@ sudo dnf install gcc
 ### Build
 
 ```bash
-git clone https://github.com/btcocurrency/btco-work-server.git
+git clone https://github.com/bitcoinnanolabs/btco-work-server.git
 cd btco-work-server
 cargo build --release
 ```
@@ -183,4 +183,4 @@ Example response:
 
 ## Troubleshooting
 
-- Linux OpenCL AMD GPU series error: `thread 'main' panicked at 'Failed to create GPU from string "00:00"` - see [solution here](https://github.com/btcocurrency/btco-work-server/issues/28)
+- Linux OpenCL AMD GPU series error: `thread 'main' panicked at 'Failed to create GPU from string "00:00"` - see [solution here](https://github.com/bitcoinnanolabs/btco-work-server/issues/28)

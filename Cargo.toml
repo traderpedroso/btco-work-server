@@ -3,7 +3,7 @@ name = "btco-work-server"
 version = "0.3.1"
 authors = ["Lee Bousfield <ljbousfield@gmail.com>"]
 license = "BSD-2-Clause"
-repository = "https://github.com/btcocurrency/btco-work-server"
+repository = "https://github.com/bitcoinnanolabs/btco-work-server"
 description = "A dedicated work server for the btco cryptocurrency"
 edition = "2021"
 
