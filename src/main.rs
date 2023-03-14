@@ -501,10 +501,10 @@ impl RpcService {
 
 #[tokio::main]
 async fn main() {
-    let args = clap::App::new("Nano work server")
+    let args = clap::App::new("btco work server")
         .version("1.0")
         .author("Lee Bousfield <ljbousfield@gmail.com>")
-        .about("Provides a work server for Nano without a full node.")
+        .about("Provides a work server for btco without a full node.")
         .arg(
             clap::Arg::with_name("listen_address")
                 .short("l")

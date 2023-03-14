@@ -70,7 +70,7 @@ impl Gpu {
         let difficulty = 0u64;
 
         let kernel = {
-            let mut kernel_builder = pro_que.kernel_builder("nano_work");
+            let mut kernel_builder = pro_que.kernel_builder("btco_work");
             kernel_builder
                 .global_work_size(threads)
                 .arg(&attempt)

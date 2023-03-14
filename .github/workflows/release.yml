@@ -21,21 +21,21 @@ jobs:
       - name: Build release
         run: cargo build --release
       - name: Generate sha256sum
-        run: pushd target/release/; sha256sum nano-work-server > nano-work-server.sha256; popd
+        run: pushd target/release/; sha256sum btco-work-server > btco-work-server.sha256; popd
       - name: Upload artifact
         uses: svenstaro/upload-release-action@14569a2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/release/nano-work-server
-          asset_name: nano-work-server
+          file: target/release/btco-work-server
+          asset_name: btco-work-server
           tag: ${{ github.ref }}
           overwrite: true
       - name: Upload sha256
         uses: svenstaro/upload-release-action@14569a2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/release/nano-work-server.sha256
-          asset_name: nano-work-server.sha256
+          file: target/release/btco-work-server.sha256
+          asset_name: btco-work-server.sha256
           tag: ${{ github.ref }}
           overwrite: true
   artifacts-windows:
@@ -46,24 +46,24 @@ jobs:
         with:
           toolchain: stable
       - name: Opencl.lib
-        run: curl -o OpenCL.lib https://s3.us-east-2.amazonaws.com/repo.nano.org/artifacts/OpenCL.lib
+        run: curl -o OpenCL.lib https://s3.us-east-2.amazonaws.com/repo.btco.org/artifacts/OpenCL.lib
       - name: Build
         run: cargo rustc --release -- -l OpenCL -L "OpenCL.lib"
       - name: Generate sha256sum
-        run: pushd target/release/; sha256sum.exe nano-work-server.exe > nano-work-server.exe.sha256; popd
+        run: pushd target/release/; sha256sum.exe btco-work-server.exe > btco-work-server.exe.sha256; popd
       - name: Upload artifact
         uses: svenstaro/upload-release-action@14569a2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/release/nano-work-server.exe
-          asset_name: nano-work-server.exe
+          file: target/release/btco-work-server.exe
+          asset_name: btco-work-server.exe
           tag: ${{ github.ref }}
           overwrite: true 
       - name: Upload sha256
         uses: svenstaro/upload-release-action@14569a2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/release/nano-work-server.exe.sha256
-          asset_name: nano-work-server.exe.sha256
+          file: target/release/btco-work-server.exe.sha256
+          asset_name: btco-work-server.exe.sha256
           tag: ${{ github.ref }}
           overwrite: true 

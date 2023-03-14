@@ -1,19 +1,19 @@
-# Nano work server
+# btco work server
 
-![Build](https://github.com/nanocurrency/nano-work-server/workflows/Build/badge.svg)
+![Build](https://github.com/btcocurrency/btco-work-server/workflows/Build/badge.svg)
 
-This project is a dedicated work server for [the Nano cryptocurrency](https://nano.org/). See the [documentation](https://docs.nano.org/integration-guides/work-generation/) for details on work generation and the current network difficulty.
+This project is a dedicated work server for [the btco cryptocurrency](https://btco.org/). See the [documentation](https://docs.btco.org/integration-guides/work-generation/) for details on work generation and the current network difficulty.
 
-**nano-work-server** supports the `work_generate`, `work_cancel`, and `work_validate` commands from the Nano RPC.
-For details on these commands, see [the Nano RPC documentation](https://docs.nano.org/commands/rpc-protocol/).
+**btco-work-server** supports the `work_generate`, `work_cancel`, and `work_validate` commands from the btco RPC.
+For details on these commands, see [the btco RPC documentation](https://docs.btco.org/commands/rpc-protocol/).
 
-To see available command line options, run `nano-work-server --help`.
+To see available command line options, run `btco-work-server --help`.
 
 If using more than one work peer, give the flag `--shuffle`. This makes it so that the next request is picked randomly instead of sequentially, which leads to more efficient work generation with multiple peers, especially when they are not in the same network.
 
 ## Current base difficulty
 
-`0xfffffff800000000` since [a75d984](https://github.com/nanocurrency/nano-work-server/commit/a75d98429a11fcb0c129a55380996a612299917b). See the [Nano work generation guide](https://docs.nano.org/integration-guides/work-generation/#difficulty-thresholds) for more information.
+`0xfffffff800000000` since [a75d984](https://github.com/btcocurrency/btco-work-server/commit/a75d98429a11fcb0c129a55380996a612299917b). See the [btco work generation guide](https://docs.btco.org/integration-guides/work-generation/#difficulty-thresholds) for more information.
 
 ## Installation
 
@@ -62,8 +62,8 @@ sudo dnf install gcc
 ### Build
 
 ```bash
-git clone https://github.com/nanocurrency/nano-work-server.git
-cd nano-work-server
+git clone https://github.com/btcocurrency/btco-work-server.git
+cd btco-work-server
 cargo build --release
 ```
 
@@ -75,7 +75,7 @@ cargo rustc --release -- -l OpenCL -L "/path/to/opencl.lib"
 
 ## Using
 
-`nano-work-server --help`
+`btco-work-server --help`
 
 _Note_ difficulty values may be outdated in these examples.
 
@@ -183,4 +183,4 @@ Example response:
 
 ## Troubleshooting
 
-- Linux OpenCL AMD GPU series error: `thread 'main' panicked at 'Failed to create GPU from string "00:00"` - see [solution here](https://github.com/nanocurrency/nano-work-server/issues/28)
+- Linux OpenCL AMD GPU series error: `thread 'main' panicked at 'Failed to create GPU from string "00:00"` - see [solution here](https://github.com/btcocurrency/btco-work-server/issues/28)

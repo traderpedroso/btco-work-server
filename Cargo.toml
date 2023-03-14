@@ -3,8 +3,8 @@ name = "nano-work-server"
 version = "0.3.1"
 authors = ["Lee Bousfield <ljbousfield@gmail.com>"]
 license = "BSD-2-Clause"
-repository = "https://github.com/nanocurrency/nano-work-server"
-description = "A dedicated work server for the Nano cryptocurrency"
+repository = "https://github.com/btcocurrency/nano-work-server"
+description = "A dedicated work server for the btco cryptocurrency"
 edition = "2021"
 
 [dependencies]
