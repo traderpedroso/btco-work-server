@@ -33,7 +33,7 @@ use chrono::{DateTime, Utc};
 
 use gpu::Gpu;
 
-const LIVE_DIFFICULTY: u64 = 0xfffffff800000000;
+const LIVE_DIFFICULTY: u64 = 0xffffffc000000000;
 const LIVE_RECEIVE_DIFFICULTY: u64 = 0xfffffe0000000000;
 
 fn work_value(root: [u8; 32], work: [u8; 8]) -> u64 {
